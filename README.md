@@ -1,10 +1,27 @@
+
+
+
+## 목차
+
+* [문제의식](#문제의식)
+* [블록체인](#BLOCK_CHAIN)
+    * [무결성](#무결성)
+    * [원장의 순수 P2P 시스템](#원장의 순수 P2P 시스템)
+    * [암호화기법](#암호화기법)
+    * [보안기술](#보안기술)
+    * [아토믹스왑](#아토믹스왑)
+    * [라이트닝네트워크](#라이트닝네트워크)
+
+
+=================
 # BLOCK_CHAIN
 **무결성을 확보하고 유지하기 위해** 순서에 따라 연결된 블록들의 정보내용을 **암호화 기법과 보안기술을 이용해 협상하는 알고리즘**으로 구성된 소프트웨어 요소를 활용하는 **원장의 순수 분산 P2P시스템**
 
 * 무결성
+* 원장의 순수 P2P 시스템
 * 암호화기법
 * 보안기술
-* 원장의 순수 P2P 시스템
+
 
 ---
 
@@ -140,6 +157,16 @@ ex) STEEM, EOS
 
     스팀 증인목록
     https://steemd.com/witnesses
+
+
+## 아토믹스왑
+
+## 라이트닝네트워크
+
+라이트닝네트워크 이해하기
+[1편](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1%EB%B6%80-6bcc9d0b9d59)
+[2편](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-2%EB%B6%80-88acfac8fd42)
+
 
 
 
