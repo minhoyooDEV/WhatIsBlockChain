@@ -1,3 +1,6 @@
+
+
+
 ## 목차
 
 * [문제의식](#문제의식)
@@ -5,7 +8,7 @@
 * [블록체인](#BLOCK_CHAIN)
     * [무결성](#무결성)
     * [원장의 순수 P2P 시스템](#원장의 순수 P2P 시스템)
-* [비트코인 용어정리](#비트코인_용어정리)
+* [비트코인 용어정리](#비트코인 용어정리)
     * [암호화기법](#암호화기법)
     * [보안기술](#보안기술)
     * [아토믹스왑](#아토믹스왑)
@@ -109,14 +112,46 @@ ex) 국가간자금이체: 간단한 거래의 경우에도 여러 중개자가 
 ## 어떤 산업을 변화 시킬 것인가?
 
 ---
-# 비트코인_용어정리
+# 비트코인 용어정리
+비트코인 구성요소 https://steemkr.com/kr/@yahweh87/3
 
 ### 컨센서스(Consensus)
-> 합의 알고리즘
+> 합의: 서로 다른 노드들이 생성될 블록에 대해 합의하는 것
+> 컨센서스알고리즘(ConsensusAlgoridm): 블록생성 방법에 대한 알고리즘
 
  악의적인 상황이 발생하더라도 네트워크를 올바른 방향으로 이끌고자하는 다수의 노드들이 상호 검증을 거쳐 올바른 블록 생성을 이끌어내는 프로세스와 알고리즘을 바로 컨센서스(합의)
 
     http://cointalk.co.kr/bbs/board.php?bo_table=beginner&wr_id=9157
+
+### 컨펌(confirm)
+> 트랜젝션이 블록에 포함되는 상황
+https://steemit.com/kr/@twinbraid/confirm
+
+
+### 6컨펌
+> 블록이 체인에 완전히 포함된 상태를 인정하는 컨펌숫자
+
+### 0컨펌
+> 블록에 포함될 올바른 거래라는 것만 검증하고 승인해주는 것을 말합니다.
+https://steemit.com/kr/@twinbraid/42ksz5
+
+### 가장긴체인
+
+
+### 하드포크
+
+비캐와 비코 블록생성이 같음 https://blockchair.com/search?q=100000
+
+비캐의 비코 하드포크 지점 (478558) https://news.bitcoin.com/fork-watch-first-bitcoin-cash-block-mined/
+
+
+### 머클트리(MerkleTree))
+
+> 데이터의 간편하고 확실한 인증
+
+머클트리의 장점 https://jayground8.github.io/what_is_merkle_root/
+머클루트 구현코드 https://steemkr.com/kr/@yahweh87/4-merkle-tree-merkle-root 
+
 
 ### HD wallet
 
@@ -139,6 +174,7 @@ https://steemit.com/coinkorea/@goldenman/utxo
 > 거래의 사이즈를 약75% 줄어든다. UTXO의 크기가 줄어 들수 있음.
 
 https://steemit.com/segwit/@loum/segwit
+
 
 ### 아토믹스왑
 
