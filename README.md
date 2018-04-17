@@ -1,15 +1,14 @@
-
-
-
 ## 목차
 
 * [문제의식](#문제의식)
+
 * [블록체인](#BLOCK_CHAIN)
-    * [무결성](#무결성)
+    * [무결성](#무결성)
     * [원장의 순수 P2P 시스템](#원장의 순수 P2P 시스템)
+* [비트코인 용어정리](#비트코인 용어정리)
     * [암호화기법](#암호화기법)
     * [보안기술](#보안기술)
-    * [아토믹스왑](#아토믹스왑)
+    * [아토믹스왑](#아토믹스왑)
     * [라이트닝네트워크](#라이트닝네트워크)
 
 
@@ -27,7 +26,9 @@
 
 
 ## 무결성
+
 시스템이 의도한 대로 작동하는 것
+
 (보안과 정확성을 포함하는 개념)
     
     데이터 무결성: 시스템에서 사용하고 유지 관리하는 데이터는 완전하고 정확하며 모순이 없다
@@ -45,6 +46,7 @@
 > 유저가 당연하게 생각하는 기능을 위해서 무결성을 지키는 것은 중요하다
 
 ## 원장의 순수 P2P 시스템
+
 구현 계층의 기능적 측면을 순수 분산시스템으로 구성한 것
 
     피어(peer), 사용자: 일대 일의 의미, 특정 행위를 하는 사람의 관점
@@ -76,9 +78,18 @@
 
 ## 암호화기법
 
+sha-256 
+
+블록생성
+
+해쉬덕후
+
+
 ## 보안기술
 
----
+블록생성을 쉽지 않게 한다 -> 시간이 오래 걸리게 한다 -> 블록생성의 비용상승
+
+직전 블록의 정보를 가지고 있는다. (직전블록의 해쉬값 보유)
 
 ### P2P == 개인과 개인 == 직접거래 == 중개자가 없음
 신뢰를 보증하기 위해서는 많은 비용이 발생함.
@@ -97,13 +108,57 @@ ex) 국가간자금이체: 간단한 거래의 경우에도 여러 중개자가 
 
 ## 어떤 산업을 변화 시킬 것인가?
 
+---
+# 비트코인 용어정리
 
-# 컨센서스(Consensus)
- == 합의 알고리즘
+### 컨센서스(Consensus)
+> 합의 알고리즘
 
  악의적인 상황이 발생하더라도 네트워크를 올바른 방향으로 이끌고자하는 다수의 노드들이 상호 검증을 거쳐 올바른 블록 생성을 이끌어내는 프로세스와 알고리즘을 바로 컨센서스(합의)
 
     http://cointalk.co.kr/bbs/board.php?bo_table=beginner&wr_id=9157
+
+### HD wallet
+
+
+### UTXO(unspent transaction output)
+
+> 소비되지 않은 트랙젝션 아웃풋........
+> 지갑은 개별 트랙젝션의 합으로 이루어짐.
+
+https://steemit.com/coinkorea/@goldenman/utxo
+
+한 지갑안에 15000원이있다고 할 때 1000원 3장 5000원 2장 500원 2개 100원 10개 가 있다고 할 때, 우리가 인지하는 각 금액의 합을 15000원이라고 하는 것은 utxo에서 각 화폐를 보유한 것의 합계를 15000원이라 생각 하는 것과 같다.
+만약, 15000원인 상황에서 1000원 1장을 더 받았다면 1000원짜리 utxo가 생성된 것
+
+
+
+### 세그윗(segregated witness)
+
+> 분리된 증인. 거래에서 UTXO의 해당하는 부분을 다른곳으로 옮기는 기술
+> 거래의 사이즈를 약75% 줄어든다. UTXO의 크기가 줄어 들수 있음.
+
+https://steemit.com/segwit/@loum/segwit
+
+### 아토믹스왑
+
+### 라이트닝네트워크
+
+라이트닝네트워크 이해하기
+[1부](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1%EB%B6%80-6bcc9d0b9d59)
+[2부](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-2%EB%B6%80-88acfac8fd42)
+[3부](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3%EB%B6%80-4ed250626b13)
+
+
+### 플라즈마
+이더리움 플라즈마 https://github.com/Onther-Tech/plasma-korea/blob/master/README.md
+
+
+
+
+= = =
+
+
 # 채굴방식
 채굴 == 블록(Block)을 캐다 == 네트워크를 유지하는 것
 
@@ -158,21 +213,10 @@ ex) STEEM, EOS
     스팀 증인목록
     https://steemd.com/witnesses
 
-
-## 아토믹스왑
-
-## 라이트닝네트워크
-
-라이트닝네트워크 이해하기
-[1편](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1%EB%B6%80-6bcc9d0b9d59)
-[2편](https://medium.com/the-litecoin-school-of-crypto/%EB%9D%BC%EC%9D%B4%ED%8A%B8%EB%8B%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-2%EB%B6%80-88acfac8fd42)
-
-
-
+--- 
 
 
 # WebAssemblyPractice
-
 
 http://webassembly.org/demo/
 
